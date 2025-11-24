@@ -68,7 +68,9 @@ function method1MultiSearch() {
 
   console.log(`⏱️  Total Time: ${timeTaken} ms`);
   console.log(`📊 Searched ${TARGET_WORDS.length} words`);
-  console.log(`💡 Complexity: O(N × M) where N=file size, M=number of searches`);
+  console.log(
+    `💡 Complexity: O(N × M) where N=file size, M=number of searches`
+  );
   return { time: parseFloat(timeTaken), results };
 }
 
@@ -114,9 +116,10 @@ console.log("╚═════════════════════�
 console.log(`\nMethod 1 (Normal Loop): ${result1.time.toFixed(4)} ms`);
 console.log(`Method 2 (Hash Map):    ${result2.time.toFixed(4)} ms`);
 console.log(
-  `\n🏆 Winner: Method 2 is ${(result1.time / result2.time).toFixed(2)}x FASTER!`
+  `\n🏆 Winner: Method 2 is ${(result1.time / result2.time).toFixed(
+    2
+  )}x FASTER!`
 );
 console.log(
   `\n💡 Key Insight: For multiple searches, Hash Map wins because it builds the index once!`
 );
-

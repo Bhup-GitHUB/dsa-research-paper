@@ -40,9 +40,11 @@ function generateSearchQueries(): string[] {
   const queries: string[] = [];
   for (let user = 0; user < 50; user++) {
     for (let search = 0; search < 100; search++) {
-      const randomWord =
-        allPossibleWords[Math.floor(Math.random() * allPossibleWords.length)];
-      queries.push(randomWord);
+      const randomIndex = Math.floor(Math.random() * allPossibleWords.length);
+      const randomWord = allPossibleWords[randomIndex];
+      if (randomWord) {
+        queries.push(randomWord);
+      }
     }
   }
   return queries;
@@ -133,9 +135,8 @@ console.log("╚═════════════════════�
 console.log(`\nMethod 1 (Normal Loop): ${time1.toFixed(4)} ms`);
 console.log(`Method 2 (Hash Map):    ${time2.toFixed(4)} ms`);
 console.log(`\n🏆 Winner: Method 2 is ${(time1 / time2).toFixed(2)}x FASTER!`);
-console.log(
-  `\n💡 Real-World Impact: This is why search engines use indexing!`
-);
+console.log(`\n💡 Real-World Impact: This is why search engines use indexing!`);
 console.log(`   Google doesn't scan the entire internet for each query.`);
-console.log(`   They build an index once and reuse it for millions of queries.`);
-
+console.log(
+  `   They build an index once and reuse it for millions of queries.`
+);

@@ -33,8 +33,13 @@ console.log("║              ALL TESTS COMPLETED                          ║")
 console.log("╚════════════════════════════════════════════════════════════╝");
 console.log("\n📊 Summary:");
 console.log("• Test 1: Multiple searches - Hash Map wins");
-console.log("• Test 2: Scalability - Both scale, but Hash Map better for multiple searches");
+console.log(
+  "• Test 2: Scalability - Both scale, but Hash Map better for multiple searches"
+);
 console.log("• Test 3: Repeated searches - Hash Map dramatically faster");
-console.log("• Test 4: Real-world scenario - Hash Map essential for search engines");
-console.log("\n💡 Conclusion: Data structures shine when you need multiple searches!");
-
+console.log(
+  "• Test 4: Real-world scenario - Hash Map essential for search engines"
+);
+console.log(
+  "\n💡 Conclusion: Data structures shine when you need multiple searches!"
+);

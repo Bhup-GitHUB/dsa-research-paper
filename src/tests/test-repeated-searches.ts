@@ -15,7 +15,9 @@ console.log("Simulating: User searches for same word multiple times\n");
 
 // Method 1: Normal Loop - Scan file 1000 times!
 function method1RepeatedSearch() {
-  console.log(`--- Method 1: Normal Loop (Scan file ${SEARCH_COUNT} times) ---`);
+  console.log(
+    `--- Method 1: Normal Loop (Scan file ${SEARCH_COUNT} times) ---`
+  );
   const startTime = performance.now();
 
   const fileContent = fs.readFileSync(filePath, "utf-8");
@@ -94,8 +96,5 @@ console.log(`\n🏆 Winner: Method 2 is ${(time1 / time2).toFixed(2)}x FASTER!`)
 console.log(
   `\n💡 Key Insight: For repeated searches (like search engines), Hash Map is MUCH better!`
 );
-console.log(
-  `   Method 1 wastes time re-scanning the same file over and over.`
-);
+console.log(`   Method 1 wastes time re-scanning the same file over and over.`);
 console.log(`   Method 2 builds an index once and reuses it efficiently.`);
-

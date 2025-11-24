@@ -1,0 +1,22 @@
+Test Number,Test Name,Method,Data Structure,Searches,Time (ms),Found,Complexity,Notes
+1,Single Search,Method 1,Normal Loop,1,9.18,5000,O(N),Fastest for single search
+1,Single Search,Method 2,Hash Map,1,12.97,5000,O(1) lookup,Slight overhead for build
+1,Single Search,Method 3,AI Model,1,1921.59,45,N/A,Only processed 5000 chars
+1,Single Search,Method 4,Trie,1,25.24,5000,O(M),Character traversal overhead
+1,Single Search,Method 5,BST,1,16.52,5000,O(log N) avg,Balanced tree performance
+1,Single Search,Method 6,Sorted Array,1,30.27,5000,O(log N),Sorting overhead
+2,Multiple Words,Method 1,Normal Loop,20,386.61,5000,O(N × M),20 separate scans
+2,Multiple Words,Method 2,Hash Map,20,51.49,5000,O(N + M),Build once search 20x
+3,Repeated Searches,Method 1,Normal Loop,1000,14461.55,5000,O(N × M),Scan file 1000x
+3,Repeated Searches,Method 2,Hash Map,1000,19.04,5000,O(N + M),Build once lookup 1000x
+4,Search Engine,Method 1,Normal Loop,5000,61425.33,5000,O(N × M),Scan file 5000x
+4,Search Engine,Method 2,Hash Map,5000,17.92,5000,O(N + M),Build once answer 5000x
+5,Scalability 1x,Method 1,Normal Loop,1,12.49,5000,O(N),669 KB file
+5,Scalability 1x,Method 2,Hash Map,1,23.53,5000,O(N),669 KB file
+5,Scalability 5x,Method 1,Normal Loop,1,88.16,5000,O(N),3345 KB file
+5,Scalability 5x,Method 2,Hash Map,1,138.23,5000,O(N),3345 KB file
+5,Scalability 10x,Method 1,Normal Loop,1,197.14,5000,O(N),6689 KB file
+5,Scalability 10x,Method 2,Hash Map,1,220.99,5000,O(N),6689 KB file
+5,Scalability 50x,Method 1,Normal Loop,1,995.06,5000,O(N),33447 KB file
+5,Scalability 50x,Method 2,Hash Map,1,1103.27,5000,O(N),33447 KB file
+

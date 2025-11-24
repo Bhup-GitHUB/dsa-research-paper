@@ -72,5 +72,6 @@ console.log("╚═════════════════════�
 console.log("\nAs file size increases:");
 console.log("• Method 1 scales linearly: O(N) per search");
 console.log("• Method 2 also scales linearly for build, but lookups stay O(1)");
-console.log("• For larger files with multiple searches, Method 2's advantage grows!");
-
+console.log(
+  "• For larger files with multiple searches, Method 2's advantage grows!"
+);
