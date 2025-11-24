@@ -1,0 +1,17 @@
+{
+  "name": "dsa-research-paper",
+  "version": "1.0.0",
+  "description": "for my dsa project a proper research for data validation and transformation and how to make it read fast saving time for processing in diffrent use cases",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
