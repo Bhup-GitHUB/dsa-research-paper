@@ -4,7 +4,7 @@ import * as path from 'path';
 import { performance } from 'perf_hooks'; // To measure time accurately
 
 // 1. Get the path to our big file
-const filePath = path.join(__dirname, '../../src/data/big-file.txt');
+const filePath = path.join(__dirname, '../data/big-file.txt');
 
 // The keyword we are looking for
 const TARGET_WORD = "Project"; 
